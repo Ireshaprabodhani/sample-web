@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- import Nav CSS Fonts Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+
+    <!-- import Nav CSS Fonts PlayfairDisplay-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="bg-body text-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body" id="header">
+        <div class="container bg-body">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/nav.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PARTNERS</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-success signup">SIGN UP FREE</button>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro" class="clearfix">
+        <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center">
+                <div class="col-md-6 intro-info order-md-first order-last">
+                    <h2 class="Intro-title">Create Stunning Email Campaigns</h2>
+                    <p class="Intro-title-Description">Create and launch email campaigns that captivate
+                        your customers in just a few clicks.</p>
+                    <div>
+                        <a href="#" class="try-now">Try Now</a>
+                        <a href="#" class="get-demo">Get a demo</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 intro-img order-md-last order-first">
+                    <img src="./assets/intro.png" class="img-fluid Responsiveimage" alt="Responsive image">
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #intro -->
+    <div class="container">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/image.png" style="width:100%" alt="" />
+                <div class="text">Caption Text</div>
+                <a href="#" class="get-demo">Get a demo</a>
+            </div>
+
+            <!-- <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/intro.png" style="width:100%" alt="">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./assets/image.png" style="width:100%" alt="">
+                <div class="text">Caption Three</div>
+            </div> -->
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <section class="reaching">
+        <div class="cardProfile">
+            <img src="./assets/photo.png" alt="" class="imagecardProfile">
+            <div class="inside-card">
+                <span class="cardProfileTitle">Frankie</span>
+                <span class="cardProfiledes">Member since 2016</span>
+            </div>
+
+        </div>
+        <div class="cardProfile">
+            <img src="./assets/photoThere.png" alt="" class="imagecardProfile">
+            <div class="inside-card">
+                <span class="cardProfileTitle">Camile</span>
+                <span class="cardProfiledes">Member since 2012</span>
+            </div>
+
+        </div>
+        <div class="cardProfile">
+            <img src="./assets/photoTwo.png" alt="" class="imagecardProfile">
+            <div class="inside-card">
+                <span class="cardProfileTitle">Elayne</span>
+                <span class="cardProfiledes">Member since 2018</span>
+            </div>
+
+        </div>
+    </section>
+    <h1 class="text-center learn-text d-flex justify-content-center">
+        Learn how others are reaching their <br> easier than ever before.
+    </h1>
+    <h1 class="text-center learn-texts d-flex justify-content-center">
+        All the best brands<br>
+        already use us.
+    </h1>
+    <div class="d-flex justify-content-center gx-5 brand-row">
+        <img src="./assets/barnd2.png" alt="">
+        <img src="./assets/barnd1.png" alt="">
+        <img src="./assets/brand5.png" alt="">
+        <img src="./assets/brand3.png" alt="">
+        <img src="./assets/brand4.png" alt="">
+    </div>
+
+
+    <section class="getStartedToday">
+        <h1>Get started today!</h1>
+        <a href="">PICK A PLAN</a>
+    </section>
+    <footer class="bg-white text-black text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-5 border-bottom">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <img src="/assets/nav.png" alt="">
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Features</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Pricing</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Service</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Partners</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">About Us</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Tutorials</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Resources</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Help Center</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Templates</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Case Studies</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Medium</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Twitter</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Facebook</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Instagram</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Linkedin</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Contact Us</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Slack</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-black footer-nav-list">
+                                <h5 class="text-uppercase">Jobs</h5>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <div class="container p-0 ">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-8 col-md-12 mb-4 mb-md-0">
+                    <p class="bottom-nav-text">NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All rights
+                        reserved.</p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+
+                    <p class="bottom-nav-text">Terms & Conditions</p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+
+                    <p class="bottom-nav-text">Privacy Policy</p>
+                </div>
+
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 ">
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    </script>
+</body>
+
+</html>
