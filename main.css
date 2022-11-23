@@ -1,504 +1,521 @@
 body {
-    background-color: #fff;
-    text-decoration: none;
+  background-color: #fff;
+  text-decoration: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navbar {
-    background-color: #fff;
+  background-color: #fff;
 
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 #header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
 
-    transition: all 0.5s;
-    z-index: 997;
-    transition: all 0.5s;
-
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    transition: all 0.5s;
-    z-index: 997;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
 }
 
 .nav-link {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 17px;
-    line-height: 20px;
-    letter-spacing: 1.275px;
-    color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 1.275px;
+  color: #000000;
 }
 
 .navbar-nav {
-    column-gap: 15px;
-    row-gap: 20px;
+  column-gap: 15px;
+  row-gap: 20px;
 }
 
 .nav-link {
-    border-bottom: 5px solid #4BA87D;
+  border-bottom: 5px solid #4ba87d;
 }
 
 .signup {
-    border-radius: 0px;
-    background-color: #4BA87D;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 17px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 1.275px;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
+  border-radius: 0px;
+  background-color: #4ba87d;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.275px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
 }
-
 
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 
+/* Image Carousel New */
+
+#intro-carousel {
+  margin-inline: auto;
+}
+
+#carousel-indicator {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 60px;
+  background-color: gray;
+}
+
+.carousel-inner {
+  width: 75%;
+  margin: auto;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
 #intro {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 
-    background-size: cover;
-
+  background-size: cover;
 }
 
 #intro .intro-info {
-    z-index: 300;
+  z-index: 300;
 }
 
-
-
 #intro .intro-info h2 {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 59px;
-    line-height: 71px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 59px;
+  line-height: 71px;
 
-    color: #000000;
+  color: #000000;
 }
 
 .Intro-title-Description {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 26px;
-    /* or 137% */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 26px;
+  /* or 137% */
 
-
-    color: #000000;
+  color: #000000;
 }
-
 
 .get-demo,
 .try-now {
-    padding: 20px 30px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 21px;
-    line-height: 25px;
-    /* identical to box height, or 119% */
-    text-decoration: none;
-    text-align: center;
-    letter-spacing: 1.05px;
-    text-transform: capitalize;
-
+  padding: 20px 30px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 25px;
+  /* identical to box height, or 119% */
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1.05px;
+  text-transform: capitalize;
 }
 
 .get-demo:hover {
-    border: 3px solid #4BA87D;
-    color: #4BA87D;
-    background-color: transparent;
+  border: 3px solid #4ba87d;
+  color: #4ba87d;
+  background-color: transparent;
 }
 
 .try-now:hover {
-    border: 3px solid #4BA87D;
-    background-color: #4BA87D;
-    color: #fff;
+  border: 3px solid #4ba87d;
+  background-color: #4ba87d;
+  color: #fff;
 }
 
 .get-demo {
-    border: 3px solid #4BA87D;
-    color: #4BA87D;
-    background-color: transparent;
-
+  border: 3px solid #4ba87d;
+  color: #4ba87d;
+  background-color: transparent;
 }
 
 .try-now {
-    border: 3px solid #4BA87D;
-    background-color: #4BA87D;
-    color: #fff;
+  border: 3px solid #4ba87d;
+  background-color: #4ba87d;
+  color: #fff;
 }
 
-
-
 @media only screen and (max-width: 1000px) {
-    .Responsiveimage {
-        margin-top: 90px;
-        left: 0px;
-        z-index: 3;
-        box-shadow: 10px 10px 10px 10px #aaaaaa;
-        height: 100%;
-        width: 100%;
+  .Responsiveimage {
+    margin-top: 90px;
+    left: 0px;
+    z-index: 3;
+    box-shadow: 10px 10px 10px 10px #aaaaaa;
+    height: 100%;
+    width: 100%;
+  }
 
-    }
-
-    #intro .intro-info div {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 40px;
-    }
+  #intro .intro-info div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    .Responsiveimage {
-        position: relative;
-        left: -100px;
-        z-index: 3;
-        box-shadow: 10px 10px 10px 10px #aaaaaa;
+  .Responsiveimage {
+    position: relative;
+    left: -100px;
+    z-index: 3;
+    box-shadow: 10px 10px 10px 10px #aaaaaa;
 
-        top: -50px;
-    }
+    top: -50px;
+  }
 
-    #intro .intro-info div {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        column-gap: 40px;
-    }
+  #intro .intro-info div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+  }
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 80px;
-    /* identical to box height, or 133% */
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 80px;
+  /* identical to box height, or 133% */
 
-
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .active,
 .dot:hover {
-    background-color: #717171;
+  background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
+  from {
+    opacity: 0.4;
+  }
 
-    to {
-        opacity: 1
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
 
 @media only screen and (max-width: 1130px) {
-    .reaching {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 30px;
-    }
+  .reaching {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+  }
 }
 
 @media only screen and (min-width: 1130px) {
-    .reaching {
-        padding-top: 100px;
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        column-gap: 30px;
-    }
+  .reaching {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+  }
 }
 
 .cardProfile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 239px;
-    width: 342px;
-    background-color: linear-gradient(deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%);
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 239px;
+  width: 342px;
+  background-color: linear-gradient(
+    deg,
+    #000000 -32.5%,
+    rgba(84, 84, 84, 0.0001) 67.78%
+  );
+  overflow: hidden;
 }
 
 .imagecardProfile {
-    height: 239px;
-    width: 342px;
-    background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+  height: 239px;
+  width: 342px;
+  background: linear-gradient(
+    0deg,
+    #000000 -32.5%,
+    rgba(84, 84, 84, 0.0001) 67.78%
+  );
 }
 
 .cardProfileTitle {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 34px;
-    line-height: 40px;
-    /* or 118% */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 40px;
+  /* or 118% */
 
-
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .cardProfiledes {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 22px;
-    /* or 116% */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  /* or 116% */
 
-
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .inside-card {
-    position: relative;
-    top: -70px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-left: 20px;
+  position: relative;
+  top: -70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 20px;
 }
 
 .learn-text {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 48px;
-    /* or 109% */
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 100px;
-    color: #000000;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 48px;
+  /* or 109% */
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #000000;
 }
 
 .learn-texts {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 48px;
-    /* or 109% */
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #000000;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 48px;
+  /* or 109% */
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
 }
 
 .brand-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .brand-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .brand-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     column-gap: 60px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .brand-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 60px;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    .brand-row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        column-gap: 60px;
-    }
+  }
 }
 
 .getStartedToday {
-    width: 100%;
-    padding-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #4BA87D;
-    margin-top: 100px;
-    padding-bottom: 90px;
+  width: 100%;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #4ba87d;
+  margin-top: 100px;
+  padding-bottom: 90px;
 }
 
 .getStartedToday h1 {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 80px;
-    /* or 133% */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 80px;
+  /* or 133% */
 
-    text-align: center;
-    height: 124px;
-    color: #FFFFFF;
+  text-align: center;
+  height: 124px;
+  color: #ffffff;
 }
 
 .getStartedToday a {
-    padding: 20px 30px;
-    background-color: #fff;
-    color: transparent;
-    border: #fff;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 21px;
-    line-height: 25px;
-    /* identical to box height, or 119% */
-    margin-top: 50px;
-    text-align: center;
-    letter-spacing: 1.05px;
-    text-decoration: none;
-    color: #4BA87D;
+  padding: 20px 30px;
+  background-color: #fff;
+  color: transparent;
+  border: #fff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 25px;
+  /* identical to box height, or 119% */
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 1.05px;
+  text-decoration: none;
+  color: #4ba87d;
 }
 
 .footer-nav-lis {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 22px;
-    /* identical to box height, or 116% */
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #000000;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  /* identical to box height, or 116% */
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .list-unstyled li a h5 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 22px;
-    /* identical to box height, or 116% */
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #000000;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  /* identical to box height, or 116% */
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .bottom-nav-text {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-    /* identical to box height, or 120% */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height, or 120% */
 
-    margin-top: 20px;
-    color: #000000;
+  margin-top: 20px;
+  color: #000000;
 }
